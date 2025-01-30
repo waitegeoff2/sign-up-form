@@ -38,6 +38,7 @@ body {
 .logo-text {
     font-family: "oswaldbold", serif;
     font-size: 50px;
+    color: white;
 }
 
 #photo-credit {
@@ -64,15 +65,90 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 33%;
-    background-color: lightgray;
+    height: 35%;
+    background-color: rgb(241, 241, 241);
     padding-left:140px;
     padding-right:140px;
 }
 
 #form-header {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 35px;
+    font-size: 32px;
     font-style: italic;
 }
 
+.middle-right {
+    display: flex;
+    align-items: center;
+    height: 30%;
+    background-color: white;
+    padding-left:30px; 
+    box-shadow: 0 4px 2px -2px gray;   
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.whole-form {
+    display: flex;
+    padding: 5px;
+}
+
+.left-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 45px;
+    height: 150px;
+}
+
+.right-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 45px;
+    height: 150px;
+}
+
+label span {
+    display: inline-block;
+    text-align: right;    
+}
+
+input {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+input:focus {
+    border: 1px solid blue;
+    box-shadow: 5px 5px 5px lightgray;   
+
+}
+
+.form-title {
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+input[id="password-confirm"]:invalid, input[id="password"]:invalid {
+    border-radius: 5px;
+    border: 1px solid red;
+}
+
+input[id="password-confirm"]:valid, input[id="password"]:valid {
+    border: 1px solid black;   
+}
